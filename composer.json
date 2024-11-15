@@ -4,11 +4,11 @@
   "authors": [
     {
       "name": "小夏",
-      "email": "yyw168@vip.qq.com"
+      "email": "iygwei@qq.com"
     }
   ],
   "require": {
-    
+
   },
   "autoload": {
     "psr-4": {
