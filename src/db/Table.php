@@ -15,6 +15,7 @@ use Phinx\Db\Table\Index;
 
 class Table extends \Phinx\Db\Table
 {
+    public $options = [];
     /**
      * 设置id
      * @param $id
