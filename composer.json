@@ -1,23 +1,27 @@
 {
   "name": "xia/migration",
-  "description": "适用thinkphp5.0版本,迁移数据库:phinx原生",
   "license": "Apache-2.0",
   "authors": [
     {
       "name": "小夏",
-      "email": "yyw168@vip.qq.com"
+      "email": "iygwei@qq.com"
     }
   ],
   "require": {
-    "robmorgan/phinx": "^0.12.6",
-    "topthink/framework": "^5.0"
+    "php": ">=8.1"
   },
   "autoload": {
     "psr-4": {
-      "xia\\migration\\": "src"
-    },
-    "files": [
-      "src/config.php"
-    ]
-  }
+      "Phinx\\": "phinx/src/Phinx",
+      "think\\migration\\": "src"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "think\\migration\\Service"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
 }
